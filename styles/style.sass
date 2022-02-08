@@ -1,0 +1,33 @@
+@use 'header'
+@use 'section'
+@use 'footer'
+@use 'errors'
+@use 'media'
+    
+$primary-background: linear-gradient(90deg, #22215a 0%, #10529c 54%, #04b6da 100%)
+$primary-font-family: Calibri
+$primary-font-size: 20px
+$primary-color: white
+
+body
+    margin: 0
+    padding: 0
+
+body, input, select, button
+    font-family: $primary-font-family
+    font-size: $primary-font-size
+    color: $primary-color
+
+input, select
+    background: none
+    outline: none
+    border: none
+    border-bottom: 2px solid white
+
+.client-form
+    background: $primary-background
+    width: fit-content
+    margin: 40px auto
+    border: 2px solid black
+    border-radius: 30px
+    overflow: hidden

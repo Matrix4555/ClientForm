@@ -1,0 +1,22 @@
+.form-section-data
+    .hasError
+        background-color: #e9282877
+    .error
+        border-bottom-left-radius: 15px
+        font-size: 17px
+        background: red
+        padding-left: 8px
+        padding-right: 4px
+        &-selector
+            border-bottom-right-radius: 15px
+            width: 100%
+            padding: 0
+            text-align: center
+    .slide-fade
+        &-enter-active
+            transition: all .4s ease
+        &-leave-active
+            transition: all .2s cubic-bezier(1.0, 0.5, 0.8, 1.0)
+        &-enter, &-leave-to
+            transform: translateY(-10px)
+            opacity: 0
