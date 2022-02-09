@@ -68,6 +68,7 @@ Vue.component('form-input', {
                 this.$emit('input', '+7');
             else if(this.value === '+7')
                 this.$emit('input', '');
+            this.validation.$reset();
         }
     },
     template: inputTemplate
