@@ -94,6 +94,10 @@ Vue.component('form-selector', {
     template: selectorTemplate
 });
 
+Vue.component('selector-option-default', {
+    template: defaultOptionTemplate
+});
+
 Vue.component('selector-option', {
     props: {
         option: { type: Object, required: true }

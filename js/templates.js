@@ -110,7 +110,7 @@ const selectorTemplate = `
                 :multiple="selector.isMultiple"
                 :size="selector.isMultiple ? selector.options.length : 1"
             >
-                <option value="" selected disabled hidden>выберите</option>
+                <selector-option-default>></selector-option-default>
                 <selector-option
                     v-for="option in selector.options"
                     :key="option.value"
@@ -120,6 +120,10 @@ const selectorTemplate = `
             <error :validation="validation" :validator="'required'" extraClass="error-selector">обязательно</error>
         </div>
     </div>
+`;
+
+const defaultOptionTemplate = `
+    <option value="" selected disabled hidden>выберите</option>
 `;
 
 const optionTemplate = `
