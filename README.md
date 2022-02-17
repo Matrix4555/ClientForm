@@ -55,6 +55,7 @@ npm run serve
 - Sass
 - Vue.js
 - Vuelidate
+- Node.js
 
 ## Authors
 
