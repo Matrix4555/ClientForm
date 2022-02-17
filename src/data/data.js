@@ -78,7 +78,7 @@ const selectors = [
     ])
 ];
 
-const sections = [
+export const sections = [
     new Section(
         CLIENTDATA_SECTION,
         'Данные о клиенте',
@@ -99,7 +99,7 @@ const sections = [
     )
 ];
 
-const fieldsForForm = {
+export const fieldsForForm = {
     surname: '',
     name: '',
     patronymic: '',

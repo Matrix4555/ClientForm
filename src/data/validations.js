@@ -1,4 +1,4 @@
-const { required, numeric, minLength, maxLength } = window.validators;
+import { required, numeric, minLength, maxLength } from 'vuelidate/lib/validators';
 
 // alpha validator passes only latin letters, we need custom one
 const containsOnlyLetters = value => !!value.match(/^[а-яА-ЯёЁa-zA-Z]*$/);
@@ -6,7 +6,7 @@ const containsOnlyLetters = value => !!value.match(/^[а-яА-ЯёЁa-zA-Z]*$/);
 // numeric validator doesn't pass a plus symbol, we need custom one
 const startsWithPlusAndContainsOnlyDigits = value => value.startsWith('+') && !(value.slice(1).match(/\D/));
 
-const validationsForForm = {
+export const validationsForForm = {
     surname: { required, containsOnlyLetters },
     name: { required, containsOnlyLetters },
     patronymic: { containsOnlyLetters },
